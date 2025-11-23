@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="adsasd.ico" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="gif-container">
+        <img id="mainGif" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaW9kY2N4c2Z0YWJqaHhqcHhzaWU4dmdubzlxcGF0c3V4YTg3MDJqMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/901mxGLGQN2PyCQpoc/giphy.gif" alt="Cute Cat">
+    </div>
+
+    <h1 id="question">Йдеш завтра гуляти?</h1>
+
+    <div class="buttons" id="btnContainer">
+        <button id="yesBtn">ТАК!</button>
+        <button id="noBtn">Ні...</button>
+    </div>
+
+    <div id="successContainer" style="display: none;">
+        <div id="date-msg" class="hidden-message">Значить о 19:00</div>
+        <p id="bday-msg2" class="deffoult hidden-message bday-msg">А ще...</p>
+        <div id="bday-msg" class="hidden-message">З днем народження!</div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

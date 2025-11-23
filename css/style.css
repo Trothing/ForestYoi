@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gif-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-weight: bold;
+}
+
+#yesBtn {
+    background-color: #ff6b6b;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+#yesBtn:hover {
+    transform: scale(1.1);
+    background-color: #ee5253;
+}
+
+#noBtn {
+    background-color: #54a0ff;
+    color: white;
+    box-shadow: 0 5px 15px rgba(84, 160, 255, 0.4);
+    position: relative;
+}
+
+.hidden-message {
+    display: none;
+    animation: fadeIn 0.8s ease-out;
+}
+
+#date-msg {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#bday-msg {
+    font-size: 2.5rem;
+    color: #d63031;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #fff, 4px 4px 0px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.deffoult{
+    color: black;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
